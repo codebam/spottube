@@ -2,8 +2,8 @@
 
 /*global chrome:false */
 
-chrome.browserAction.setBadgeText({ text: "(ツ)" });
-chrome.browserAction.setBadgeBackgroundColor({ color: "#eae" });
+browser.browserAction.setBadgeText({ text: "(ツ)" });
+browser.browserAction.setBadgeBackgroundColor({ color: "#eae" });
 
 function copyToClipboard(text) {
   const isFirefox = !chrome.app;
@@ -21,7 +21,7 @@ function copyToClipboard(text) {
   }
 }
 
-chrome.browserAction.onClicked.addListener(() => {
+browser.browserAction.onClicked.addListener(() => {
   browser.tabs.query({ active: true }).then((tab) => {
     const key = "AIzaSyA0_xhHQX9BY9DINdzKoFpV0vJgAlj9rAw";
     const request = new Request(
