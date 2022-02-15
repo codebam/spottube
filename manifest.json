@@ -2,10 +2,16 @@
   "manifest_version": 2,
   "name": "SpotTube",
   "version": "1.0",
+  "permissions": ["tabs"],
   "applications": {
     "gecko": {
       "id": "spottube@riseup.net"
     }
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
 
   "browser_action": {
