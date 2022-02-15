@@ -3,15 +3,15 @@
   "name": "SpotTube",
   "version": "1.0",
   "description": "get the youtube link for your current tab, such as spotify",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "clipboardWrite"],
   "applications": {
     "gecko": {
-      "id": "spottube@riseup.net"
+      "id": "codebam@riseup.net"
     }
   },
 
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["browser-polyfill.min.js", "background.js"],
     "persistent": false
   },
 
