@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "SpotTube",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "id": "spottube@riseup.net"
+    }
+  },
+
+  "browser_action": {
+    "default_title": "SpotTube"
+  }
+}
