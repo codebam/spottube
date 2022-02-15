@@ -6,7 +6,7 @@
   "permissions": ["tabs", "clipboardWrite"],
   "applications": {
     "gecko": {
-      "id": "codebam@riseup.net"
+      "id": "spottube@riseup.net"
     }
   },
 
